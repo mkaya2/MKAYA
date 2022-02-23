@@ -1,0 +1,24 @@
+def topla(x,y):
+  return x+y
+print("topla(3,5)=",topla(3,5))
+
+class eleman:
+  def __init__(self,x,y):
+    self.x=0
+    self.y=0
+    self.next=None
+class list:
+  def __init__(self):
+      self.head=None
+  def sona_ekle(self,eleman):
+    if self.head is None:
+      head=eleman
+    else:
+      head.next=eleman
+      eleman.next=None
+
+a=eleman(3,5)
+h=list()
+h.sona_ekle(a)
+print(a.x)
+print(h.head)
